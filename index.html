@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atta Ikemefuna Timothy - Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f4f9;
-      color: #333;
+      background: #000000; /* AMOLED true black */
+      color: #e0e0e0; /* Light gray text for readability */
     }
     header {
-      background: #2c3e50;
-      color: #fff;
+      background: #111111;
+      color: #00ffcc; /* Neon cyan accent */
       padding: 2rem;
       text-align: center;
     }
@@ -24,17 +26,22 @@
     header p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
+      color: #ffffff;
     }
     nav {
-      background: #34495e;
+      background: #0d0d0d;
       padding: 1rem;
       text-align: center;
     }
     nav a {
-      color: #fff;
+      color: #00ffcc;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff00aa; /* Neon pink hover */
     }
     section {
       padding: 2rem;
@@ -42,7 +49,7 @@
       margin: auto;
     }
     h2 {
-      color: #2c3e50;
+      color: #00ffcc;
       margin-bottom: 1rem;
     }
     .projects {
@@ -51,14 +58,50 @@
       gap: 1rem;
     }
     .project-card {
-      background: #fff;
+      background: #111111;
       padding: 1rem;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,255,204,0.3);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #00ffcc;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #ff00aa;
+      color: #ffffff;
+    }
+    .btn.demo {
+      background: #333333;
+      color: #ffffff;
+    }
+    .btn.demo:hover {
+      background: #ff00aa;
+    }
+    .btn i {
+      margin-right: 6px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    ul li i {
+      margin-right: 8px;
+      color: #00ffcc;
     }
     footer {
-      background: #2c3e50;
-      color: #fff;
+      background: #111111;
+      color: #888888;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
@@ -93,10 +136,22 @@
       <div class="project-card">
         <h3>Student Management System</h3>
         <p>A web app to manage student records using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/Sederxoxo/student-management-system" target="_blank" class="btn">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <a href="https://your-demo-link.com/student-management" target="_blank" class="btn demo">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
       </div>
       <div class="project-card">
         <h3>Network Monitoring Tool</h3>
         <p>Internship project to monitor ICT infrastructure performance.</p>
+        <a href="https://github.com/Sederxoxo/network-monitoring-tool" target="_blank" class="btn">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <a href="https://your-demo-link.com/network-monitoring" target="_blank" class="btn demo">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
       </div>
     </div>
   </section>
@@ -104,18 +159,18 @@
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Python, Java</li>
-      <li>HTML, CSS, React</li>
-      <li>Git & GitHub</li>
-      <li>Networking basics</li>
+      <li><i class="fab fa-python"></i> Python, Java</li>
+      <li><i class="fab fa-html5"></i> HTML, CSS, React</li>
+      <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+      <li><i class="fas fa-network-wired"></i> Networking basics</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: blackducky80@gmail.com</p>
-    <p>Phone Number: +2348054804974</p>
-    <p>GitHub: github.com/Sederxoxo</p>
+    <p>Email: <a href="mailto:blackducky80@gmail.com">blackducky80@gmail.com</a></p>
+    <p>Phone Number: <a href="tel:+2348054804974">+2348054804974</a></p>
+    <p>GitHub: <a href="https://github.com/Sederxoxo" target="_blank">github.com/Sederxoxo</a></p>
   </section>
 
   <footer>
